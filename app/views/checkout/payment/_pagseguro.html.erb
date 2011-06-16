@@ -1,1 +1,3 @@
-Order <%= @order.id %>
+<%  @pagseguro_order = PagSeguro::Order.new(@order.number) %>
+<%  @order.line_items.each { |item| @pagseguro_order.add :id => item.id, :price => item.price, :description => item.variant.name}  %>
+<%= pagseguro_form @pagseguro_order, :submit => "Efetuar pagamento!" %>
