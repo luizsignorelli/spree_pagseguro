@@ -17,6 +17,7 @@ module SpreePagseguro
 
       BillingIntegration::PaypalExpress.register
       BillingIntegration::PaypalExpressUk.register
+      PaymentMethod::Pagseguro.register
     end
 
     config.to_prepare &method(:activate).to_proc
