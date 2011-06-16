@@ -1,5 +1,5 @@
 require 'spree_core'
-require 'spree_paseguro_hooks'
+require 'spree_pagseguro_hooks'
 
 module SpreePagseguro
   class Engine < Rails::Engine
