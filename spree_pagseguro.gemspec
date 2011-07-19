@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_pagseguro'
-  s.version     = '0.0.4'
+  s.version     = '0.0.5'
   s.summary     = 'Adds PagSeguro as a Payment Method to Spree store'
   s.homepage    = ''
   s.author      = 'Luiz Signorelli'
